@@ -3,9 +3,11 @@ function getResponseFromAPI() {
 		const success = true;
 
 		if (success) {
-			resolve("true");
+			resolve('true');
 		} else {
-			reject("false");
+			reject(new Error('false'));
 		}
 	});
 }
+
+export default getResponseFromAPI;
