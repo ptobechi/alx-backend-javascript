@@ -4,7 +4,6 @@ class Currency {
 		this._name = this._validateName(name);
 	}
 
-	// Validation methods
 	_validateCode(code) {
 		if (typeof code !== 'string') {
 			throw new TypeError('Code must be a string');
@@ -19,7 +18,6 @@ class Currency {
 		return name;
 	}
 
-	// Getter and setter for code
 	get code() {
 		return this._code;
 	}
@@ -28,7 +26,6 @@ class Currency {
 		this._code = this._validateCode(value);
 	}
 
-	// Getter and setter for name
 	get name() {
 		return this._name;
 	}
@@ -37,7 +34,6 @@ class Currency {
 		this._name = this._validateName(value);
 	}
 
-	// Method to display full currency
 	displayFullCurrency() {
 		return `${this._name} (${this._code})`;
 	}
