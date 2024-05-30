@@ -10,3 +10,6 @@ function handleProfileSignup() {
 			console.error('Signup system offline');
 		});
 }
+
+export default handleProfileSignup;
+
