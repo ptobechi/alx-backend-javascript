@@ -1,5 +1,5 @@
 // 0-console.js
-function displayMessage(message) {
+const displayMessage = (message) => {
     console.log(message);
 }
   
